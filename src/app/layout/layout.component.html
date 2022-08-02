@@ -101,9 +101,8 @@
         </div>
     </div>
 
-
     <!-- content -->
-    <div class="w-full h-screen">
+    <div class="w-full h-full">
         <div class="w-full flex justify-between border border-b bg-gray-100 p-6">
             <div>
                 <div class="flex px-3 py-[12px]">
@@ -129,8 +128,6 @@
 
         <div class="shadow-lg mt-6 p-6 text-[24px] items-center bg-gray-200">
             유저 관리
-            <!-- </div> -->
-
             <div class="mx-6 py-[20px] px-[20px] mt-[29px] border border-b border-black rounded-lg bg-white">
                 <div class="border border-b rounded-[10px]">
                     <input placeholder="유저명 또는 User ID 를 입력해주세요." class="w-full px-[10px] py-[10px] rounded-[10px]">
@@ -151,6 +148,18 @@
                     </div>
                     <div>거주지</div>
                 </div>
+                <!-- <div
+                    class="p-2 cursor-point grid grid-cols-5 grid-flow-col text-center border border-black items-center hover:bg-gray-100">
+                </div> -->
+
+                <!-- <div class="p-2 cursor-pointer grid grid-cols-5 grid-flow-col text-center border border-black bg-purple-600 items-center hover:bg-gray-100" *ngFor="let Index_l of index_list">
+                    <div class="flex justify-start items-center text-left">{{ Index_l.name }}</div>
+                    <div class="flex justify-center items-center h-full">{{ Index_l.user_id }}</div>
+                    <div class="flex justify-center items-center h-full">{{ Index_l.sex }}</div>
+                    <div class="h-full flex justify-center items-center">{{ Index_l.age }}</div>
+                    <div class="text-left p-2">{{ Index_l.residence }}</div>
+                </div> -->
+
                 <div
                     class="p-2 cursor-pointer grid grid-cols-5 grid-flow-col text-center border border-black items-center hover:bg-gray-100">
                     <div class="flex justify-start items-center text-left">김현우</div>
@@ -242,8 +251,6 @@
                 </div>
 
 
-
-
                 <div class="w-full border border-red-900">
                     <div class="flex justify-between">
                         <div class="pt-[26px] pb-[30px] flex justify-center items-center">페이지 별 목록 개수
@@ -254,14 +261,26 @@
                             </div>
                         </div>
                         <div class="grid grid-cols-3 grid-flow-col items-center pr-5 text-center text-gray-700">
-                            <img src="assets/icons/first_page.svg" class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                            <img src="assets/icons/left_page.svg" class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                            <div class="rounded-lg w-9 h-9  hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">1</div>
-                            <div class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">2</div>
-                            <div class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">3</div>
-                            <div class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">4</div>
-                            <img src="assets/icons/right_page.svg" class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                            <img src="assets/icons/last_page.svg" class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+                            <img src="assets/icons/first_page.svg"
+                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+                            <img src="assets/icons/left_page.svg"
+                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+                            <div
+                                class="rounded-lg w-9 h-9  hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+                                1</div>
+                            <div
+                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+                                2</div>
+                            <div
+                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+                                3</div>
+                            <div
+                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+                                4</div>
+                            <img src="assets/icons/right_page.svg"
+                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+                            <img src="assets/icons/last_page.svg"
+                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
                         </div>
                     </div>
                 </div>
@@ -278,3 +297,19 @@
     </div>
     <div class="flex-1 ...">04</div>
   </div> -->
+
+<!-- <div class="p-2 cursor-pointer grid grid-cols-5 grid-flow-col text-center border border-black bg-purple-600 items-center hover:bg-gray-100" *ngFor="let Index_l of index_list">
+    <div class="flex justify-start items-center text-left">{{ Index_l.name }}</div>
+    <div class="flex justify-center items-center h-full">{{ Index_l.user_id }}</div>
+    <div class="flex justify-center items-center h-full">{{ Index_l.sex }}</div>
+    <div class="h-full flex justify-center items-center">{{ Index_l.age }}</div>
+    <div class="text-left p-2">{{ Index_l.residence }}</div>
+</div> -->
+<!-- <div
+    class="p-2 cursor-pointer grid grid-cols-5 grid-flow-col text-center border border-black bg-purple-600 items-center hover:bg-gray-100">
+    <div class="flex justify-start items-center text-left">김현우</div>
+    <div class="flex justify-center items-center h-full">dkanskcj</div>
+    <div class="flex justify-center items-center h-full">남성</div>
+    <div class="h-full flex justify-center items-center">25</div>
+    <div class="text-left p-2">광주광역시 어딘가</div>
+</div> -->
