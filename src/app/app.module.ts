@@ -16,12 +16,12 @@ const routes:Routes = [
       layout:'sidemenu',
     },
     component:LayoutComponent,
-    children:[
-      {
-        path: 'invoices'
-        // loadChildren : ()
-      }
-    ]
+    // children:[
+    //   {
+    //     path: 'invoices'
+    //     // loadChildren : ()
+    //   }
+    // ]
   }
 ]
 

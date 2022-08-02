@@ -3,23 +3,23 @@
 
         <div class="text-white py-7 px-5 flex gap-2.5 hover:bg-primary-Light cursor-pointer rounded-[10px]">
             <img src="assets/icons/logo.svg">
-            <div>Health</div>
+            <div>관리자 페이지</div>
         </div>
         <div class="w-full h-px bg-primary-Lighter mb-5"></div>
 
         <div
             class="bg-primary-noselect flex px-5 py-[14px] w-full hover:bg-primary-Light cursor-pointer rounded-[10px]">
             <img src="assets/icons/dashboard.svg">
-            <div class="px-3">Dashboard</div>
+            <div class="px-3">대쉬보드</div>
         </div>
 
         <div
             class="bg-primary-select flex justify-between px-5 py-[14px] w-full hover:bg-primary-Light cursor-pointer rounded-[10px]">
 
-            <div class="flex gap-3">
-                <img src="assets/icons/content.svg">배송장
+            <div class="flex gap-3 just justify-between">
+                <img src="assets/icons/content.svg">사용자 관리
             </div>
-            <img src="assets/icons/accordian.svg">
+            <img src="assets/icons/accordian_top.svg">
         </div>
 
         <!-- <div class="bg-primary-noselect space-x-3 w-full hover:bg-primary-Light cursor-pointer rounded-[12px]">
@@ -39,17 +39,27 @@
 
 
         <div class="rounded-[12px]">
-            <div class="bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
+            <div
+                class="bg-primary-noselect flex justify-between px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
                 <div class="w-6 h-6 flex justify-center items-center">
                     <img src="assets/icons/Dot.svg">
                 </div>
-                <div>배송장 관리</div>
+                <div>유저 관리</div>
+                <div class="flex justify-center items-center">
+                    <img src="assets/icons/accordian_top.svg">
+                </div>
+            </div>
+            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
+                <div class="w-6 h-6 flex justify-center items-center">
+                    <img src="assets/icons/Dot.svg">
+                </div>
+                <div>프로필 관리</div>
             </div>
             <div class="bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
                 <div class="w-6 h-6 flex justify-center items-center">
                     <img src="assets/icons/Dot.svg">
                 </div>
-                <div>반품배송장 관리</div>
+                <div>목표 관리</div>
             </div>
         </div>
 
@@ -61,20 +71,82 @@
     </div>
 
 
-
-    <div class="w-full">
+    <!-- content -->
+    <div class="w-full h-screen">
         <div class="w-full flex justify-between border border-b bg-gray-100 p-6">
             <div>
-                <div class="flex">
-                    dashboard
+                <div class="flex px-3 py-[12px]">
+                    사용자 관리
                     <img src="assets/icons/right.svg">
-                    <div class="text-gray-500">asd</div>
+                    <div class="text-gray-500">유저 관리</div>
+                    <img src="assets/icons/right.svg">
+                    <div class="text-gray-500">프로필 관리</div>
                 </div>
             </div>
-            <div>users</div>
+            <div class="flex px-3 py-2 space-x-4">
+                <img src="assets/icons/alter.svg" class="cursor-pointer">
+                <img src="assets/icons/profile_icon.svg" class="cursor-pointer hover:bg-red-500 focus:ring-black">
+            </div>
         </div>
-        <div class="w-full">contents</div>
+        <div class="w-full px-6 py-8 flex justify-between overflow-y-auto">
+            <div class="text-2xl font-bold">배송장 관리</div>
+            <div
+                class="w-[68px] h-[38px] text-white text-center bg-primary-select px-3 py-2 hover:bg-primary-Light cursor-pointer rounded-[6px] active:bg-primary-Light/300 focus:ring-primary-Light">
+                등록
+            </div>
+        </div>
+
+        <div class="shadow-lg mt-6 p-6 text-[24px] items-center">
+            유저 관리
+        </div>
+
+        <div class="px-6 py-[29px] border border-b border-black">
+            <div class="border border-b rounded-[10px]">
+                <input placeholder="유저명 또는 User ID 를 입력해주세요." class="w-full px-[10px] py-[10px] rounded-[10px]">
+            </div>
+            <div
+                class="px-2 cursor-pointer grid gap-4 grid-cols-5 grid-flow-col text-center border border-black border-red items-center hover:bg-gray-100">
+                <div class="text-left">유저명</div>
+                <div>User ID</div>
+                <div>성별</div>
+                <div>나이</div>
+                <div>거주지</div>
+            </div>
+            <div
+                class="px-2 cursor-pointer grid gap-4 grid-cols-5 grid-flow-col text-center border border-black border-red items-center hover:bg-gray-100">
+                <div class="text-left">김현우</div>
+                <div>dkanskcj</div>
+                <div>남성</div>
+                <div>25</div>
+                <div>광주광역시 어딘가1111111111111 어딘가1111111111111 어딘가111111111111111111111111111</div>
+            </div>
+            <div
+            class="px-2 cursor-pointer grid gap-4 grid-cols-5 grid-flow-col text-center border border-black border-red items-center hover:bg-gray-100">
+
+                <div class="text-left">박설빈</div>
+                <div>선글라스</div>
+                <div>여성</div>
+                <div>33</div>
+                <div>광주광역시 어떤 학교 어딘가</div>
+            </div>
+            <div
+            class="px-2 cursor-pointer grid gap-4 grid-cols-5 grid-flow-col text-center border border-black border-red items-center hover:bg-gray-100">
+
+                <div class="text-left">김예은</div>
+                <div>Yes_kim</div>
+                <div>여성</div>
+                <div>29</div>
+                <div>광주광역시 광산구 어딘가</div>
+            </div>
+        </div>
     </div>
 </div>
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+<!-- 
+<div class="flex ...">
+    <div class="flex-1 ...">01</div>
+    <div class="contents">
+      <div class="flex-1 ...">02</div>
+      <div class="flex-1 ...">03</div>
+    </div>
+    <div class="flex-1 ...">04</div>
+  </div> -->
