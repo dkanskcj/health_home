@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UserTargetComponent } from './user-target.component';
+import { TrainerEditComponent } from './trainer-edit.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: UserTargetComponent
+    component: TrainerEditComponent
   }
 ]
+
 
 @NgModule({
   imports: [
@@ -16,4 +17,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class UserTargetRoutingModule { }
+export class TrainerEditRoutingModule { }
