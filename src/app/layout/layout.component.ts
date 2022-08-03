@@ -32,7 +32,7 @@ export class LayoutComponent implements OnInit {
       name: '박설빈',
       user_id: '선글라스',
       sex: '여성',
-      age: 3,
+      age: 33,
       residence: '광주광역시 어떤 학교 어딘가'
     },
     {

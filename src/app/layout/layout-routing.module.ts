@@ -8,7 +8,7 @@ const routes:Routes = [
         component:LayoutComponent,
         children:[
             {
-                path:'target',
+                path:'user_profile',
                 loadChildren:()=> import('../user-target/user-target.module').then(m=>m.UserTargetModule),
             }
         ]
