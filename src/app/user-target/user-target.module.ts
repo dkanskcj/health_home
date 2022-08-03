@@ -1,15 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { UserTargetRoutingModule } from './user-target-routing.module';
 import { UserTargetComponent } from './user-target.component';
 
 
 
 @NgModule({
+
+
   declarations: [UserTargetComponent],
   imports: [
     CommonModule,
-    UserTargetRoutingModule
+    UserTargetRoutingModule,
+    FormsModule
   ]
 })
-export class UserTargetModule { }
+export class UserTargetModule {
+  
+ }

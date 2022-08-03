@@ -49,13 +49,13 @@
                     <img src="assets/icons/accordian.svg">
                 </div>
             </div>
-            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
+            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer" routerLink="/target">
                 <div class="w-6 h-6 flex justify-center items-center">
                     <img src="assets/icons/Dot.svg">
                 </div>
                     <div>프로필 관리</div>
             </div>
-            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer" routerLink="/target">
+            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
                 <div class="w-6 h-6 flex justify-center items-center">
                     <img src="assets/icons/Dot.svg">
                 </div>
@@ -106,7 +106,6 @@
             <div class="px-3">통계</div>
         </div>
     </div>
-
     <!-- content -->
     <div class="w-full h-full">
         <div class="w-full flex justify-between border border-b bg-gray-100 p-6">
@@ -124,189 +123,16 @@
                 <img src="assets/icons/profile_icon.svg" class="cursor-pointer hover:bg-red-500 focus:ring-black">
             </div>
         </div>
-        <div class="w-full px-6 py-8 flex justify-between overflow-y-auto">
+        
+        <!-- <div class="w-full px-6 py-8 flex justify-between overflow-y-auto">
             <div class="text-2xl font-bold">배송장 관리</div>
             <div
                 class="w-[68px] h-[38px] text-white text-center bg-primary-select px-3 py-2 hover:bg-primary-Light cursor-pointer rounded-[6px] active:bg-primary-Light/300 focus:ring-primary-Light">
                 등록
             </div>
-        </div>
-
-        <div class="shadow-lg mt-6 p-6 text-[24px] items-center bg-gray-200">
-            유저 관리
-            <div class="mx-6 py-[20px] px-[20px] mt-[29px] border border-b border-black rounded-lg bg-white">
-                <div class="border border-b rounded-[10px]">
-                    <input placeholder="유저명 또는 User ID 를 입력해주세요." class="w-full px-[10px] py-[10px] rounded-[10px]">
-                </div>
-
-                <!-- 기존 코드 삭제한 곳 -->
-
-                <table class="w-full text-centeritems-center table-fixed">
-                    <thead>
-                        <tr>
-                            <th class="p-2 text-left k h-full flex justify-start">이름
-                                <img src="assets/icons/asc.svg" class="p-2">
-                            </th>
-                            <th class="p-2 h-full">User ID</th>
-                            <th class="p-2 h-full">성별</th>
-                            <th class="p-2 h-full flex justify-center items-center">나이
-                                <img src="assets/icons/asc.svg" class="p-2">
-                            </th>
-                            <th class="p-2 h-full">거주지</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">김현우</td>
-                            <td class="p-2">dkanskcj</td>
-                            <td class="p-2">man</td>
-                            <td class="p-2">25</td>
-                            <td class="text-left p-2">광주광역시 신안동 어딘가</td>
-                        </tr>
-                    </tbody>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">박설빈</td>
-                            <td class="p-2">선글라스</td>
-                            <td class="p-2">여성</td>
-                            <td class="p-2">33</td>
-                            <td class="text-left p-2">광주광역시 어떤 학교 어딘가</td>
-                        </tr>
-                    </tbody>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">김예은</td>
-                            <td class="p-2">Yes_kim</td>
-                            <td class="p-2">여성</td>
-                            <td class="p-2">29</td>
-                            <td class="text-left p-2">광주광역시 광산구 어딘가</td>
-                        </tr>
-                    </tbody>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">유저4</td>
-                            <td class="p-2">blueberry_fago</td>
-                            <td class="p-2">여성</td>
-                            <td class="p-2">27</td>
-                            <td class="text-left p-2">광주광역시 서동 어딘가</td>
-                        </tr>
-                    </tbody>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">유저5</td>
-                            <td class="p-2">whoami</td>
-                            <td class="p-2">남성</td>
-                            <td class="p-2">34</td>
-                            <td class="text-left p-2">광주광역시 나는 누구</td>
-                        </tr>
-                    </tbody>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">유저6</td>
-                            <td class="p-2">whereami</td>
-                            <td class="p-2">남성</td>
-                            <td class="p-2">21</td>
-                            <td class="text-left p-2">광주광역시 여긴 어디 나는 누구</td>
-                        </tr>
-                    </tbody>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">유저7</td>
-                            <td class="p-2">Imyoung</td>
-                            <td class="p-2">여성</td>
-                            <td class="p-2">20</td>
-                            <td class="text-left p-2">광주광역시 양림동 어딘가</td>
-                        </tr>
-                    </tbody>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">유저8</td>
-                            <td class="p-2">apgujeong</td>
-                            <td class="p-2">여성</td>
-                            <td class="p-2">44</td>
-                            <td class="text-left p-2">서울특별시 압구정동 어딘가</td>
-                        </tr>
-                    </tbody>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">유저9</td>
-                            <td class="p-2">tamna</td>
-                            <td class="p-2">남성</td>
-                            <td class="p-2">33</td>
-                            <td class="text-left p-2">제주특별자치도 노형동 어딘가</td>
-                        </tr>
-                    </tbody>
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
-                        <tr>
-                            <td class="p-2 text-left">유저10</td>
-                            <td class="p-2">test</td>
-                            <td class="p-2">여성</td>
-                            <td class="p-2">22</td>
-                            <td class="text-left p-2">광주광역시 어딘가</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-                <div class="w-full">
-                    <div class="flex justify-between">
-                        <div class="pt-[26px] pb-[30px] flex justify-center items-center">페이지 별 목록 개수
-                            <div
-                                class="ml-2 flex w-[63px] h-[38px] border-[3px] border-gray-700 border-b-2 rounded-lg items-center justify-center">
-                                <div class="text-[14px] pr-1">
-                                    <select name="test" id="" class="w-full px-2 justify-center">
-                                        <option value="10">10</option>
-                                        <option value="20">20</option>
-                                        <option value="30">30</option>
-                                    </select>
-                                </div>
-                                <!-- 새 창에서 열기 -->
-                                <!-- <select name="test" id="" class="w-full px-2 justify-center z-10 translate-x-5" onchange="if(this.value) window.open(this.value);">
-                                    <option value="https://www.naver.com">10</option>
-                                    <option value="20">20</option>
-                                    <option value="30">30</option>
-                                </select> -->
-                                <!-- 현재 창에서 열기 -->
-                                <!-- <select name="test" id="" class="w-full px-2 justify-center z-10 translate-x-5" onchange="if(this.value) location.href=(this.value);">
-                                    <option value="https://www.naver.com">10</option>
-                                    <option value="20">20</option>
-                                    <option value="30">30</option>
-                                </select> -->
-                                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="cursor-pointer">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M3.57573 11.0728C3.34142 10.8385 3.34142 10.4586 3.57573 10.2243L7.99999 5.80001L12.4243 10.2243C12.6586 10.4586 12.6586 10.8385 12.4243 11.0728C12.1899 11.3071 11.81 11.3071 11.5757 11.0728L7.99999 7.49706L4.42426 11.0728C4.18994 11.3071 3.81004 11.3071 3.57573 11.0728Z"
-                                        fill="black" />
-                                </svg> -->
-                                <!-- <img src="assets/icons/accordian_top.svg" class="cursor-pointer"> -->
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-3 grid-flow-col items-center pr-5 text-center text-gray-700">
-                            <img src="assets/icons/first_page.svg"
-                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                            <img src="assets/icons/left_page.svg"
-                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                            <div
-                                class="rounded-lg w-9 h-9  hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                                1</div>
-                            <div
-                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                                2</div>
-                            <div
-                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                                3</div>
-                            <div
-                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                                4</div>
-                            <img src="assets/icons/right_page.svg"
-                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                            <img src="assets/icons/last_page.svg"
-                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> -->
+        <router-outlet></router-outlet>
+        
     </div>
 </div>
 <!-- 
@@ -366,3 +192,4 @@
         <div>고객 문의 관리</div>
     </div>
 </button> -->
+<!-- <router-outlet></router-outlet> -->
