@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InvoicesComponent } from './invoices.component';
+import { TrainerModalComponent } from './trainer-modal.component';
 
-describe('InvoicesComponent', () => {
-  let component: InvoicesComponent;
-  let fixture: ComponentFixture<InvoicesComponent>;
+describe('TrainerModalComponent', () => {
+  let component: TrainerModalComponent;
+  let fixture: ComponentFixture<TrainerModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InvoicesComponent ]
+      declarations: [ TrainerModalComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(InvoicesComponent);
+    fixture = TestBed.createComponent(TrainerModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

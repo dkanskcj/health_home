@@ -20,11 +20,12 @@ export class UserProfileEditComponent implements OnInit {
   ngOnInit(): void {
   }
   query: string = '';
+  searchText: any;
 
   index_list: Index_l[] = [
     {
       name: '김현우',
-      user_id: 'dkansckj',
+      user_id: 'dkanskcj',
       gender: '남성',
       age: 25,
       residence: '광주광역시 어딘가'
@@ -33,7 +34,7 @@ export class UserProfileEditComponent implements OnInit {
       name: '박설빈',
       user_id: '선글라스',
       gender: '여성',
-      age: 3,
+      age: 33,
       residence: '광주광역시 어떤 학교 어딘가'
     },
     {

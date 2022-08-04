@@ -23,6 +23,26 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path:'',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'user_target',
+        loadChildren: () => import('../user-target/user-target.module').then(m=>m.UserTargetModule)
+      }
+    ]
+  },
+  {
+    path:'',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'dashboard',
+        loadChildren: () => import('../pages/dashboard/dashboard.module').then(m=>m.DashboardModule)
+      }
+    ]
+  },
 ]
 
 @NgModule({

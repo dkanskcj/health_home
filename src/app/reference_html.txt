@@ -1,3 +1,7 @@
 https://homzzang.com/b/html-47
 
 alt shift o
+
+npm i angular-bootstrap-modal
+npm i ng2-search-filter --sava
+ng g module name --routing
