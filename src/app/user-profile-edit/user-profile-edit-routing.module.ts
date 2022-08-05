@@ -7,12 +7,12 @@ const routes: Routes = [
   {
     path: '',
     component: UserProfileEditComponent,
-    children: [
-      {
-        path: 'user_modal',
-        loadChildren: () => import('../user-modal/user-modal.module').then(m=>m.UserModalModule)
-      }
-    ]
+    // children: [
+    //   {
+    //     path: 'user_modal',
+    //     loadChildren: () => import('../user-modal/user-modal.module').then(m=>m.UserModalModule)
+    //   }
+    // ]
   }
 ]
 

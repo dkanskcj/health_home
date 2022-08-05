@@ -5,3 +5,34 @@ alt shift o
 npm i angular-bootstrap-modal
 npm i ng2-search-filter --sava
 ng g module name --routing
+
+
+modal 띄우기 @@
+npm i @ionic/angular
+
+app.module.ts
+IonicModule.forRoot(),
+
+html에서
+<ion-app>
+  <ion-router-outlet>
+  </ion-router-outlet>
+</ion-app>
+
+
+modal.component.ts
+constructor(
+    private modalContorller: ModalController
+  ) { }
+
+  ngOnInit(): void {
+  }
+
+  async createModal() {
+    const modal = await this.modalContorller.create({
+      component: UserModalComponent,
+    })
+
+    modal.present();
+    
+  }

@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { TrainerEditComponent } from './trainer-edit.component';
 import { TrainerEditRoutingModule } from './trainer-edit-routing.module';
 import { FormsModule } from '@angular/forms';
+import { UserProfileEditComponent } from '../user-profile-edit/user-profile-edit.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [TrainerEditComponent],
   imports: [
     CommonModule,
     TrainerEditRoutingModule,

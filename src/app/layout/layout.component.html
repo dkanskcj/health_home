@@ -1,15 +1,15 @@
 <div class="h-full w-full flex">
-    <div class="flex-col w-[252px] text-white items-start p-5 h-screen bg-primary">
+    <div class="flex-col w-[252px] text-white items-start p-5 h-screen bg-primary text-[16px]">
 
         <div class="text-white py-7 px-5 flex gap-2.5 hover:bg-primary-Light cursor-pointer rounded-[10px]"
             routerLink="/">
             <img src="assets/icons/logo.svg">
             <div>관리자 페이지</div>
         </div>
-        <div class="w-full h-px bg-primary-Lighter mb-5"></div>
+        <div class="w-[212px] h-px bg-primary-Lighter mb-5"></div>
 
         <div class="bg-primary-noselect flex px-5 py-[14px] w-full hover:bg-primary-Light cursor-pointer rounded-[10px]"
-            routerLink="dashboard">
+            routerLink="/dashboard">
             <img src="assets/icons/dashboard.svg">
             <div class="px-3">대쉬보드</div>
         </div>
@@ -29,6 +29,7 @@
                 class="bg-primary-noselect flex justify-between px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
                 <div class="w-6 h-6 flex justify-center items-center">
                     <img src="assets/icons/Dot.svg">
+                    <!-- 유저 관리 -->
                 </div>
                 <div>유저 관리</div>
                 <div class="flex justify-center items-center">
@@ -36,25 +37,41 @@
                 </div>
             </div>
             <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer"
-                routerLink="user_profile">
+                routerLink="/user_profile">
                 <div class="w-6 h-6 flex justify-center items-center">
                     <img src="assets/icons/Dot.svg">
                 </div>
                 <div>프로필 관리</div>
             </div>
             <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer"
-                routerLink="user_target">
+                routerLink="/user_target">
                 <div class="w-6 h-6 flex justify-center items-center">
                     <img src="assets/icons/Dot.svg">
                 </div>
                 <div>목표 관리</div>
             </div>
-            <div class="bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer"
-                routerLink="/trainer_profile">
+            <div
+                class="bg-primary-noselect flex justify-between px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
                 <div class="w-6 h-6 flex justify-center items-center">
                     <img src="assets/icons/Dot.svg">
                 </div>
                 <div>트레이너 관리</div>
+                <div class="flex justify-center items-center">
+                    <img src="assets/icons/accordian.svg">
+                </div>
+            </div>
+            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer"
+                routerLink="/trainer_profile">
+                <div class="w-6 h-6 flex justify-center items-center">
+                    <img src="assets/icons/Dot.svg">
+                </div>
+                <div>프로필 관리</div>
+            </div>
+            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
+                <div class="w-6 h-6 flex justify-center items-center">
+                    <img src="assets/icons/Dot.svg">
+                </div>
+                <div>무얼할까 관리</div>
             </div>
         </div>
         <div class="rounded-[12px]">
@@ -63,7 +80,7 @@
                 <div class="w-6 h-6 flex justify-center items-center">
                     <img src="assets/icons/Dot.svg">
                 </div>
-                <div>유저대응</div>
+                <div class="cursor-pointer">유저대응</div>
                 <div class="flex justify-center items-center">
                     <img src="assets/icons/accordian_top.svg">
                 </div>
@@ -96,7 +113,7 @@
         </div>
     </div>
     <!-- content -->
-    <div class="w-full h-full">
+    <!-- <div class="w-full h-full"> -->
         <!-- <div class="w-full flex justify-between border border-b bg-gray-100 p-6">
             <div>
                 <div class="flex px-3 py-[12px]">
@@ -112,12 +129,15 @@
                 <img src="assets/icons/profile_icon.svg" class="cursor-pointer hover:bg-red-500 focus:ring-black">
             </div>
         </div> -->
-        <router-outlet>
-        </router-outlet>
-    </div>
+        <!-- <router-outlet></router-outlet> -->
+        <ion-content>
+            <router-outlet>
+            </router-outlet>
+        </ion-content>
+    <!-- </div> -->
 </div>
-<!-- 
-<div class="pt-4">
+
+<!-- <div class="pt-4">
     <button class="btn btn-danger" (click)="clickedModal()">모달</button>
   </div>
   
@@ -138,8 +158,8 @@
         </div>
       </div>
     </div>
-  </div> -->
-<!-- 
+  </div>
+   
 <div class="flex ...">
     <div class="flex-1 ...">01</div>
     <div class="contents">
@@ -147,7 +167,7 @@
       <div class="flex-1 ...">03</div>
     </div>
     <div class="flex-1 ...">04</div>
-  </div> -->
+  </div> --> -->
 
 <!-- <div class="p-2 cursor-pointer grid grid-cols-5 grid-flow-col text-center border border-black bg-purple-600 items-center hover:bg-gray-100" *ngFor="let Index_l of index_list">
     <div class="flex justify-start items-center text-left">{{ Index_l.name }}</div>
