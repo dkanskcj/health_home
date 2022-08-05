@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicModule } from '@ionic/angular';
+import { RouteReuseStrategy } from '@angular/router';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +22,7 @@ import { UserModalComponent } from './user-modal/user-modal.component';
     Ng2SearchPipeModule,
     IonicModule.forRoot(),
   ],
-  providers: [],
+  providers: [{ provide:RouteReuseStrategy, useClass:IonicRouteStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
