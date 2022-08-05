@@ -6,7 +6,13 @@ import { UserProfileEditComponent } from './user-profile-edit.component';
 const routes: Routes = [
   {
     path: '',
-    component: UserProfileEditComponent
+    component: UserProfileEditComponent,
+    children: [
+      {
+        path: 'user_modal',
+        loadChildren: () => import('../user-modal/user-modal.module').then(m=>m.UserModalModule)
+      }
+    ]
   }
 ]
 

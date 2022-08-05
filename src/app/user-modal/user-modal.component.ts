@@ -8,20 +8,21 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class UserModalComponent implements OnInit {
 
-  // @Input() name;
+  // public modal: boolean = false;
 
-  // constructor(public activeModal: NgbActiveModal) { }
+  // clickedModalClose() {
+  //   this.modal = false;
+  // }
+
+  // clickedModal(){
+  //   this.modal = true;
+  // }
+
+
+
 
   ngOnInit(): void {
   }
 
+  
 }
-// @Component({selector: 'ngbd-modal-component', templateUrl: './modal-component.html'})
-// export class NgbdModalComponent {
-//   constructor() {}
-
-//   open() {
-//     const modalRef = this.modalService.open(NgbdModalContent);
-//     modalRef.componentInstance.name = 'World';
-//   }
-// }

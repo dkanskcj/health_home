@@ -93,6 +93,16 @@ export class LayoutComponent implements OnInit {
     },
   ];
 
+
+  // public modal: boolean = false;
+
+  // clickedModalClose() {
+  //   this.modal = false;
+  // }
+
+  // clickedModal(){
+  //   this.modal = true;
+  // }
   ngOnInit(): void {
   }
 }

@@ -1,8 +1,10 @@
 <div class="h-full w-full">
     <div class="w-full flex justify-between border border-b bg-gray-100 p-6">
         <div class="flex">
-            <div class="flex px-3 py-[12px]" routerLink="../dashboard">
-                대쉬보드
+            <div class="flex px-3 py-[12px]">
+                <div class=" cursor-pointer hover:bg-gray-200 " routerLink="../dashboard">
+                    대쉬보드
+                </div>
                 <img src="assets/icons/right.svg">
                 <div class="text-gray-500">유저 관리</div>
                 <img src="assets/icons/right.svg">
@@ -35,32 +37,22 @@
                         <th class="p-2 h-full flex justify-center items-center">나이
                             <img src="assets/icons/asc.svg" class="p-2">
                         </th>
-                        <th class="p-2 h-full">거주지</th>
+                        <th class="p-2 h-full">거주지</th> 
+                        <th class="w-[50px]">설정</th>
                     </tr>
                 </thead>
                 <ng-container *ngFor="let Index_l of index_list | filter:searchText">
-                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200 cursor-pointer">
+                    <tbody class="text-center hover:bg-gray-100 active:bg-gray-200">
                         <tr>
                             <td class="p-2 text-left" routerLink="/user_target">{{ Index_l.name }}</td>
                             <td class="p-2 text-left">{{ Index_l.user_id }}</td>
                             <td class="p-2">{{ Index_l.gender }}</td>
                             <td class="p-2">{{ Index_l.age }}</td>
                             <td class="text-left p-2">{{ Index_l.residence }}</td>
+                            <td class="p-2">
+                                    <img src="assets/icons/edit.svg" class="cursor-pointer" routerLink="user_modal">
+                            </td>
                         </tr>
-                        <!-- <tr *ngIf="query === Index_l.name && query">
-                        <td class="p-2 text-left">{{ Index_l.name }}</td>
-                        <td class="p-2">{{ Index_l.user_id }}</td>
-                        <td class="p-2">{{ Index_l.gender }}</td>
-                        <td class="p-2">{{ Index_l.age }}</td>
-                        <td class="text-left p-2">{{ Index_l.residence }}</td>
-                    </tr>
-                    <tr *ngIf="!query">
-                        <td class="p-2 text-left">{{ Index_l.name }}</td>
-                        <td class="p-2">{{ Index_l.user_id }}</td>
-                        <td class="p-2">{{ Index_l.gender }}</td>
-                        <td class="p-2">{{ Index_l.age }}</td>
-                        <td class="text-left p-2">{{ Index_l.residence }}</td>
-                    </tr> -->
                     </tbody>
                 </ng-container>
             </table>
@@ -104,6 +96,7 @@
             </div>
         </div>
     </div>
+    <router-outlet></router-outlet>
 <!-- 새 창에서 열기 -->
 <!-- <select name="test" id="" class="w-full px-2 justify-center z-10 translate-x-5" onchange="if(this.value) window.open(this.value);">
                             <option value="https://www.naver.com">10</option>
