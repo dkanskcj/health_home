@@ -52,7 +52,8 @@
                             <td class="p-2 text-left">{{ target_l.name }}</td>
                             <td class="p-2">{{ target_l.present }}</td>
                             <td class="p-2">{{ target_l.ex_target }}</td>
-                            <td class="text-left p-2">{{ target_l.achive }}</td>
+                            <!-- <td class="text-left p-2">{{ target_l.achive }}</td> -->
+                            <input type="checkbox" [checked]="target_l.achive">
                         </tr>
                     </tbody>
                 </ng-container>
@@ -91,7 +92,10 @@
                             <td class="p-2 text-left">{{ target_t.name }}</td>
                             <td class="p-2">{{ target_t.present }}</td>
                             <td class="p-2">{{ target_t.ex_target }}</td>
-                            <td class="text-left p-2">{{ target_t.achive }}</td>
+                            <!-- <td class="text-left p-2">{{ target_t.achive }}</td> -->
+                            <!-- <td class="text-left p-2"> -->
+                            <input type="checkbox" [checked]="target_t.achive">
+                            <!-- </td> -->
                         </tr>
                     </tbody>
                 </ng-container>
@@ -136,126 +140,34 @@
                 </ng-container>
             </table>
         </div>
-
     </div>
-    asd
-    <canvas id="myChart" width="400" height="400"></canvas>
-    <script>
-        const ctx = document.getElementById('myChart');
-        const myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-    <!-- <div>
-        <canvas id="myChart"></canvas>
+    <div class="w-full h-[200px] pt-6 pl-6 pr-6 pb-2">
+        <canvas id="charts"></canvas>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const labels = [
-            'January',
-            'February',
-            'March',
-            'April',
-            'May',
-            'June',
-        ];
-
-        const data = {
-            labels: labels,
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
-                data: [0, 10, 5, 2, 20, 30, 45],
-            }]
-        };
-
-        const config = {
-            type: 'line',
-            data: data,
-            options: {}
-        };
-    </script>
-    <script>
-        const myChart = new Chart(
-          document.getElementById('myChart'),
-          config
-        );
-      </script> -->
-    asd
-    <!-- <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series"
-        chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick">
-    </canvas> -->
-
-    <!-- <canvas id="myChart" width="400" height="400"></canvas>
-    <script src="node_modules/chart.js/Chart.min.js"></script>
-    <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script> -->
-    <!-- <script>
-    const ctx = document.getElementById('myChart').getContext('2d');
-    const myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-</script> -->
+    <div class="grid grid-flow-col justify-center items-center pr-5 text-center text-gray-700">
+        <img src="assets/icons/first_page.svg"
+            class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+        <img src="assets/icons/left_page.svg"
+            class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+        <div
+            class="rounded-lg w-9 h-9 flex justify-center items-center hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+            1</div>
+        <div
+            class="w-9 h-9 rounded-lg flex justify-center items-center hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+            2</div>
+        <div
+            class="w-9 h-9 rounded-lg flex justify-center items-center hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+            3</div>
+        <div
+            class="w-9 h-9 rounded-lg flex justify-center items-center hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+            4</div>
+        <img src="assets/icons/right_page.svg"
+            class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+        <img src="assets/icons/last_page.svg"
+            class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
+    </div>
+    <div class="flex justify-end pr-5">
+        <button>취소</button>
+        <button>적용</button>
+    </div>
 </div>

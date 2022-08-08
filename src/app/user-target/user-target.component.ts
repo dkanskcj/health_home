@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as Chart from 'chart.js';
+import { Chart } from 'chart.js';
+
 
 type target_l = {
   date: string,
@@ -37,41 +38,72 @@ export class UserTargetComponent implements OnInit {
   t_query: any;
   f_query: any;
 
+  chart: Chart;
+
   config = {
     type: 'line',
     data: {
       
     },
+    data2: {
+
+    },
     options: {}
   };
 
   labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
   ];
 
   data = {};
-
+  data2 = {};
   constructor() { }
   
   // myLineChart = new Chart(ctx, config);
 
   ngOnInit(): void {
-    this.data = {
-      labels: this.labels,
-      datasets: [{
-        label: 'My First dataset',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [0, 10, 5, 2, 20, 30, 45],
-      }]
-    };
     // let ctx = document.getElementById("myChart");
     // let myChart = new Chart(ctx, {});
+    // const ctx = document.getElementById('myChart').getContext('2d');
+    this.labels;
+    this.chart = new Chart("charts", {
+      type: 'line',
+      data: {
+        labels: ['3월', '4월', '5월', '6월', '7월', '8월'],
+        datasets: [
+          {
+            label: '현재 체중',
+            data: [91, 92, 88, 83, 80, 78],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+            ],
+            borderWidth: 1,
+        },
+        {
+          label: '목표 체중',
+          data: [72, 79, 78, 80, 78, 78],
+          backgroundColor: [
+            'rgba(54, 162, 132, 0.2)',
+          ],
+          borderColor: [
+            'rgba(54, 162, 235, 1)',
+          ],
+          borderWidth: 1,
+        },
+      ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        // responsive:false,
+          scales: {
+              y: {
+                  beginAtZero: true,
+              }
+          }
+      }
+  });
   }
 
 
@@ -131,68 +163,3 @@ export class UserTargetComponent implements OnInit {
 
 
 }
-
-
-// export class LineChartComponent {
-//   lineChartData: ChartDataSets[] = [
-//     { data: [85, 72, 78, 75, 77, 75], label: 'Crude oil prices' },
-//   ];
-//   lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June'];
-//   lineChartOptions = {
-//     responsive: true,
-//   };
-//   lineChartColors: Color[] = [
-//     {
-//       borderColor: 'black',
-//       backgroundColor: 'rgba(255,255,0,0.28)',
-//     },
-//   ];
-//   lineChartLegend = true;
-//   lineChartPlugins = [];
-//   lineChartType = 'line';
-  
-// }
-// export class LineChartComponent implements AfterViewInit {
-//   @ViewChild('lineCanvas') lineCanvas: ElementRef;
-//   lineChart: any;
-
-//   constructor() { }
-
-//   ngAfterViewInit(): void {
-//     this.lineChartMethod();
-//   }
-
-//   lineChartMethod() {
-//     this.lineChart = new Chart(this.lineCanvas.nativeElement, {
-//       type: 'line',
-//       data: {
-//         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December'],
-//         datasets: [
-//           {
-//             label: 'Sell per week',
-//             fill: false,
-//             lineTension: 0.1,
-//             backgroundColor: 'rgba(75,192,192,0.4)',
-//             borderColor: 'rgba(75,192,192,1)',
-//             borderCapStyle: 'butt',
-//             borderDash: [],
-//             borderDashOffset: 0.0,
-//             borderJoinStyle: 'miter',
-//             pointBorderColor: 'rgba(75,192,192,1)',
-//             pointBackgroundColor: '#fff',
-//             pointBorderWidth: 1,
-//             pointHoverRadius: 5,
-//             pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-//             pointHoverBorderColor: 'rgba(220,220,220,1)',
-//             pointHoverBorderWidth: 2,
-//             pointRadius: 1,
-//             pointHitRadius: 10,
-//             data: [65, 59, 80, 81, 56, 55, 40, 10, 5, 50, 10, 15],
-//             spanGaps: false,
-//           }
-//         ]
-//       }
-//     });
-//   }
-
-// }
