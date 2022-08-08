@@ -14,7 +14,7 @@ import { UserProfileEditComponent } from './user-profile-edit.component';
     UserProfileEditRoutingModule,
     FormsModule,
     Ng2SearchPipeModule,
-    IonicModule
+    IonicModule,
   ]
 })
 export class UserProfileEditModule { }

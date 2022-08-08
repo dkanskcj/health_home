@@ -36,3 +36,6 @@ constructor(
     modal.present();
     
   }
+
+
+  npm install angular-chart.js --save
