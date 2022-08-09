@@ -45,9 +45,6 @@ export class UserTargetComponent implements OnInit {
     data: {
       
     },
-    data2: {
-
-    },
     options: {}
   };
 
@@ -55,7 +52,6 @@ export class UserTargetComponent implements OnInit {
   ];
 
   data = {};
-  data2 = {};
   constructor() { }
   
   // myLineChart = new Chart(ctx, config);

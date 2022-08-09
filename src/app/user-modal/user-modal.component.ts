@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { IonModal, ModalController } from '@ionic/angular';
+import { Component, OnInit } from '@angular/core';
 import { OverlayEventDetail } from '@ionic/core/components';
+import { ModalController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-user-modal',
@@ -9,27 +10,29 @@ import { OverlayEventDetail } from '@ionic/core/components';
 })
 export class UserModalComponent implements OnInit {
 
-    // @ViewChild(IonModal) modal: IonModal;
+  // @ViewChild(IonModal) modal: IonModal;
 
-    message = '';
-    name:string = 'string';
+  message = '';
+  name: string = 'string';
 
-    // cancel(){
-    //   this.modal.dismiss(null, 'cancel');
-    // }
-    // confirm(){
-    //   this.modal.dismiss(this.name, 'confirm');
-    // }
-    onWillDismiss(event: Event){
-      const ev = event as CustomEvent<OverlayEventDetail<string>>;
-      if(ev.detail.role === 'confirm'){
-        this.message = 'Hello, ${ev.detail.data}!';
-      }
-    }
   
+  // cancel(){
+  //   this.modal.dismiss(null, 'cancel');
+  // }
+  // confirm(){
+  //   this.modal.dismiss(this.name, 'confirm');
+  // }
+
+  onWillDismiss(event: Event) {
+    const ev = event as CustomEvent<OverlayEventDetail<string>>;
+    if (ev.detail.role === 'confirm') {
+      this.message = 'Hello, ${ev.detail.data}!';
+    }
+  }
 
 
-  constructor() {}
+
+  constructor(public modalController: ModalController) { }
 
   // constructor(
   //   private modalContorller: ModalController

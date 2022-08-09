@@ -7,12 +7,21 @@ const routes: Routes = [
   {
     path: '',
     component: UserProfileEditComponent,
+
     // children: [
     //   {
     //     path: 'user_modal',
     //     loadChildren: () => import('../user-modal/user-modal.module').then(m=>m.UserModalModule)
     //   }
     // ]
+  },
+  {
+    path: 'user_modal',
+    loadChildren: () => import('../user-modal/user-modal.module').then(m => m.UserModalModule)
+  },
+  {
+    path: 'test_modal',
+    loadChildren: () => import('../pages/test-modal/test-modal.module').then(m=>m.TestModalModule)
   }
 ]
 
