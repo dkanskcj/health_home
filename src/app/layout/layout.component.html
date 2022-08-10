@@ -1,217 +1,145 @@
 <div class="h-full w-full flex">
-    <div class="flex-col w-[252px] text-white items-start p-5 h-screen bg-primary text-[16px]">
+    <div class="flex-col w-[252px] items-start p-5 h-screen bg-primary text-[16px] text-primary-nosel_dot">
 
-        <div class="text-white py-7 px-5 flex gap-2.5 hover:bg-primary-Light cursor-pointer rounded-[10px]"
+        <div class="text-white py-7 px-5 flex gap-2.5 hover:bg-primary-select cursor-pointer rounded-[10px]"
             routerLink="/">
             <img src="assets/icons/logo.svg">
-            <div>관리자 페이지</div>
+            <div class="text-white">관리자 페이지</div>
         </div>
         <div class="w-[212px] h-px bg-primary-Lighter mb-5"></div>
 
-        <div class="bg-primary-noselect flex px-5 py-[14px] w-full hover:bg-primary-Light cursor-pointer rounded-[10px]"
+        <div class="flex px-5 py-[14px] w-full hover:bg-primary-select cursor-pointer rounded-[10px]"
             routerLink="/dashboard">
             <img src="assets/icons/dashboard.svg">
-            <div class="px-3">대쉬보드</div>
+            <div class="px-3 text-white">대쉬보드</div>
         </div>
 
-        <div
-            class="bg-primary-select flex justify-between px-5 py-[14px] w-full hover:bg-primary-Light cursor-pointer rounded-[10px]">
-
-            <div class="flex gap-3 justify-between">
-                <img src="assets/icons/content.svg">사용자 관리
-            </div>
-            <img src="assets/icons/accordian_top.svg">
-        </div>
-
-
-        <div class="rounded-[12px]">
+        <div class="bg-primary-noselect rounded-t-lg">
             <div
-                class="bg-primary-noselect flex justify-between px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
-                <div class="flex gap-3 justify-between">
-                    <img src="assets/icons/Dot.svg">유저 관리
+                class="bg-primary-select flex justify-between px-5 py-[14px] w-full hover:bg-primary-select cursor-pointer rounded-lg">
+
+                <div class="flex gap-3 justify-between text-white">
+                    <img src="assets/icons/content.svg">사용자 관리
                 </div>
-                    <!-- 유저 관리 -->
-                <!-- <div>유저 관리 </div> -->
+                <img src="assets/icons/accordian_top.svg">
+            </div>
+
+            <div>
+                <div
+                    class="bg-primary-noselect flex justify-between rounded-t-lg px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer">
+                    <div class="flex gap-3 justify-between text-white">
+                        <img src="assets/icons/Dot.svg">유저 관리
+                    </div>
+                    <div>
+                        <img src="assets/icons/accordian.svg">
+                    </div>
+                </div>
+                <div class="bg-primary-select flex px-5 py-[14px] rounded-t-lg space-x-3 w-full hover:bg-primary-select cursor-pointer"
+                    routerLink="/user_profile">
+                    <div class="w-6 h-6 flex justify-center items-center">
+                        <img src="assets/icons/Dot.svg">
+                    </div>
+                    <div class="text-white">프로필 관리</div>
+                </div>
+                <div class="bg-primary-select flex px-5 py-[14px] rounded-b-lg space-x-3 w-full hover:bg-primary-select cursor-pointer"
+                    routerLink="/user_target">
+                    <div class="w-6 h-6 flex justify-center items-center">
+                        <img src="assets/icons/nosel_Dot.svg">
+                    </div>
+                    <div>목표 관리</div>
+                </div>
+            </div>
+            <div
+                class="bg-primary-noselect flex justify-between px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer">
+                <div class="flex gap-3 justify-between">
+                    <img src="assets/icons/nosel_Dot.svg">트레이너 관리
+                </div>
                 <div>
                     <img src="assets/icons/accordian.svg">
                 </div>
             </div>
-            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer"
-                routerLink="/user_profile">
-                <div class="w-6 h-6 flex justify-center items-center">
-                    <img src="assets/icons/Dot.svg">
-                </div>
-                <div>프로필 관리</div>
-            </div>
-            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer"
-                routerLink="/user_target">
-                <div class="w-6 h-6 flex justify-center items-center">
-                    <img src="assets/icons/Dot.svg">
-                </div>
-                <div>목표 관리</div>
-            </div>
-            <div
-                class="bg-primary-noselect flex justify-between px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
-                <div class="flex gap-3 justify-between">
-                    <img src="assets/icons/Dot.svg">트레이너 관리
-                </div>
-                <div>
-                    <img src="assets/icons/accordian.svg">
-                </div>
-            </div>
-            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer"
+            <div class="bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer"
                 routerLink="/trainer_profile">
                 <div class="w-6 h-6 flex justify-center items-center">
-                    <img src="assets/icons/Dot.svg">
+                    <img src="assets/icons/nosel_Dot.svg">
                 </div>
                 <div>프로필 관리</div>
             </div>
-            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer"a>
+            <div class="bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer"
+                a>
                 <div class="w-6 h-6 flex justify-center items-center">
-                    <img src="assets/icons/Dot.svg">
+                    <img src="assets/icons/nosel_Dot.svg">
                 </div>
                 <div>무얼할까 관리</div>
             </div>
         </div>
         <div class="rounded-[12px]">
-            <div
-                class="bg-primary-noselect flex justify-between px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
-                <div class="flex gap-3 justify-between">
-                    <img src="assets/icons/Dot.svg">유저 대응</div>
+            <div class="flex justify-between px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer">
+                <div class="flex gap-3 justify-between text-white">
+                    <img src="assets/icons/Dot.svg">유저 대응
+                </div>
                 <div>
                     <img src="assets/icons/accordian.svg">
                 </div>
             </div>
-            <div class="bg-primary-select flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
+            <div
+                class="bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer">
                 <div class="w-6 h-6 flex justify-center items-center">
-                    <img src="assets/icons/Dot.svg">
+                    <img src="assets/icons/nosel_Dot.svg">
                 </div>
                 <div>신고 관리</div>
             </div>
-            <div class="bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
+            <div
+                class="bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer">
                 <div class="w-6 h-6 flex justify-center items-center">
-                    <img src="assets/icons/Dot.svg">
+                    <img src="assets/icons/nosel_Dot.svg">
                 </div>
                 <div>고객 문의 관리</div>
             </div>
         </div>
-        <div class=" flex px-5 py-[14px] w-full hover:bg-primary-Light cursor-pointer rounded-[10px]">
-            <img src="assets/icons/basong.svg">
-            <div class="px-3">기타</div>
-        </div>
-        <div class=" flex px-5 py-[14px] w-full hover:bg-primary-Light cursor-pointer rounded-[10px]">
-            <img src="assets/icons/basong.svg">
-            <div class="px-3">회계관리</div>
-        </div>
-
-        <div class=" flex px-5 py-[14px] w-full hover:bg-primary-Light cursor-pointer rounded-[10px]">
-            <img src="assets/icons/basong.svg">
-            <div class="px-3">통계</div>
-        </div>
-    </div>
-    <!-- content -->
-    <!-- <div class="w-full h-full"> -->
-        <!-- <div class="w-full flex justify-between border border-b bg-gray-100 p-6">
-            <div>
-                <div class="flex px-3 py-[12px]">
-                    사용자 관리
-                    <img src="assets/icons/right.svg">
-                    <div class="text-gray-500">유저 관리</div>
-                    <img src="assets/icons/right.svg">
-                    <div class="text-gray-500">프로필 관리</div>
+        <div class="rounded-[12px]">
+            <div class="flex justify-between px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer">
+                <div class="flex gap-3 justify-between text-white">
+                    <img src="assets/icons/Dot.svg">기타
+                </div>
+                <div>
+                    <img src="assets/icons/accordian.svg">
                 </div>
             </div>
-            <div class="flex px-3 py-2 space-x-4">
-                <img src="assets/icons/alter.svg" class="cursor-pointer">
-                <img src="assets/icons/profile_icon.svg" class="cursor-pointer hover:bg-red-500 focus:ring-black">
+            <div
+                class="rounded-lg bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer">
+                <div class="w-6 h-6 flex justify-center items-center">
+                    <img src="assets/icons/nosel_Dot.svg">
+                </div>
+                <div>공지사항 관리</div>
             </div>
-        </div> -->
-        <!-- <router-outlet></router-outlet> -->
-        <ion-content>
-            <router-outlet>
-            </router-outlet>
-            <!-- <ion-router-outlet></ion-router-outlet> -->
-        </ion-content>
-    <!-- </div> -->
+            <div
+                class="rounded-lg bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer">
+                <div class="w-6 h-6 flex justify-center items-center">
+                    <img src="assets/icons/nosel_Dot.svg">
+                </div>
+                <div>이벤트 관리</div>
+            </div>
+            <div
+                class="rounded-lg bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-select cursor-pointer">
+                <div class="w-6 h-6 flex justify-center items-center">
+                    <img src="assets/icons/nosel_Dot.svg">
+                </div>
+                <div>배너 관리</div>
+            </div>
+        </div>
+        <div class=" flex px-5 py-[14px] w-full hover:bg-primary-select cursor-pointer rounded-[10px]">
+            <img src="assets/icons/basong.svg">
+            <div class="px-3 text-white">회계관리</div>
+        </div>
+
+        <div class=" flex px-5 py-[14px] w-full hover:bg-primary-select cursor-pointer rounded-[10px]" routerLink="pages/total">
+            <img src="assets/icons/basong.svg">
+            <div class="px-3 text-white">통계</div>
+        </div>
+    </div>
+    <ion-content>
+        <router-outlet>
+        </router-outlet>
+    </ion-content>
 </div>
-
-<!-- <div class="pt-4">
-    <button class="btn btn-danger" (click)="clickedModal()">모달</button>
-  </div>
-  
-  <div [ngClass]="modal ? 'modal fade show d-block' : 'modal fade'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" (click)="clickedModalClose()">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>body</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" (click)="clickedModalClose()">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-   
-<div class="flex ...">
-    <div class="flex-1 ...">01</div>
-    <div class="contents">
-      <div class="flex-1 ...">02</div>
-      <div class="flex-1 ...">03</div>
-    </div>
-    <div class="flex-1 ...">04</div>
-  </div> --> -->
-
-<!-- <div class="p-2 cursor-pointer grid grid-cols-5 grid-flow-col text-center border border-black bg-purple-600 items-center hover:bg-gray-100" *ngFor="let Index_l of index_list">
-    <div class="flex justify-start items-center text-left">{{ Index_l.name }}</div>
-    <div class="flex justify-center items-center h-full">{{ Index_l.user_id }}</div>
-    <div class="flex justify-center items-center h-full">{{ Index_l.sex }}</div>
-    <div class="h-full flex justify-center items-center">{{ Index_l.age }}</div>
-    <div class="text-left p-2">{{ Index_l.residence }}</div>
-</div> -->
-<!-- <div
-    class="p-2 cursor-pointer grid grid-cols-5 grid-flow-col text-center border border-black bg-purple-600 items-center hover:bg-gray-100">
-    <div class="flex justify-start items-center text-left">김현우</div>
-    <div class="flex justify-center items-center h-full">dkanskcj</div>
-    <div class="flex justify-center items-center h-full">남성</div>
-    <div class="h-full flex justify-center items-center">25</div>
-    <div class="text-left p-2">광주광역시 어딘가</div>
-</div> -->
-<!-- <div class="bg-black">
-    <div class="hidden bg-purple-400 hover:block">
-        test
-    </div>
-</div> -->
-
-<!-- <form class="flex items-center space-x-6">
-    <div class="shrink-0">
-        <img class="h-16 w-16 object-cover rounded-full"
-            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80"
-            alt="Current profile photo" />
-    </div>
-    <label class="block">
-        <span class="sr-only">Choose profile photo</span>
-        <input type="file" class="block w-full text-sm text-slate-500
-        file:mr-4 file:py-2 file:px-4
-        file:rounded-full file:border-0
-        file:text-sm file:font-semibold
-        file:bg-violet-50 file:text-violet-700
-        hover:file:bg-violet-100
-      " />
-    </label>
-</form> -->
-
-<!-- <button value="https://www.naver.com" onchange="window.open(this.value);">
-    <div class="bg-primary-noselect flex px-5 py-[14px] space-x-3 w-full hover:bg-primary-Light cursor-pointer">
-        <div class="w-6 h-6 flex justify-center items-center">
-            <img src="assets/icons/Dot.svg">
-        </div>
-        <div>고객 문의 관리</div>
-    </div>
-</button> -->
-<!-- <router-outlet></router-outlet> -->

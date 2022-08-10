@@ -23,6 +23,10 @@ const routes: Routes = [
         path: 'user_target',
         loadChildren: () => import('../user-target/user-target.module').then(m=>m.UserTargetModule)
       },
+      {
+        path: 'pages/total',
+        loadChildren: () => import('../pages/total/total.module').then(m=>m.TotalModule)
+      },
     ]
   }
 ]

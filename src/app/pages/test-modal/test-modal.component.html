@@ -1,10 +1,12 @@
-<div class="ion-page">
+<!-- 사용하지 않는 페이지 -->
+
+
+<!-- <div class="ion-page">
     <ion-header>
         <ion-toolbar>
             <ion-title>App</ion-title>
         </ion-toolbar>
     </ion-header>
-    <!-- <ion-content class="ion-padding"> -->
     <ion-button id="open-modal" expand="block">Open</ion-button>
     <ion-modal #modal trigger="open-modal" [swipeToClose]="true" [canDismiss]="canDismiss">
         <ng-template>
@@ -16,12 +18,9 @@
                     </ion-buttons>
                 </ion-toolbar>
             </ion-header>
-            <!-- <ion-content class="ion-padding"> -->
                 <p>You will be prompted when closing this modal.</p>
-            <!-- </ion-content> -->
         </ng-template>
     </ion-modal>
-    <!-- </ion-content> -->
 </div>
 
 
@@ -30,8 +29,6 @@
       <ion-title>Inline Modal</ion-title>
     </ion-toolbar>
   </ion-header>
-  <!-- <ion-content class="ion-padding"> -->
-    <!-- <ion-button expand="block" (click)="setOpen(true)">Open</ion-button> -->
     <img src="../../../assets/icons/accordian_top.svg" (click)="setOpen(true)">
     <ion-modal [isOpen]="isModalOpen">
       <ng-template>
@@ -51,5 +48,4 @@
           </p>
         </ion-content>
       </ng-template>
-    </ion-modal>
-  <!-- </ion-content> -->
+    </ion-modal> -->

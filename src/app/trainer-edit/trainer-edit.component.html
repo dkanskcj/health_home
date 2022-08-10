@@ -1,3 +1,4 @@
+<!-- 상단바 -->
 <div>
     <div class="h-full w-full">
         <div class="w-full flex justify-between border border-b bg-gray-100 h-16">
@@ -19,6 +20,7 @@
             </div>
         </div>
     </div>
+    <!-- 다음 부분 -->
     <div class="shadow-lg text-[24px] items-center p-6 bg-gray-50">
         유저 관리
         <div class="py-[20px] px-[20px] mt-[29px]  rounded-lg bg-white text-[14px]">
@@ -26,7 +28,6 @@
                 <input placeholder="유저명 또는 User ID 를 입력해주세요." [(ngModel)]="searchText" type="text"
                     class="w-full px-[10px] py-[10px] rounded-[10px]">
             </div>
-            <!-- 기존 코드 삭제한 곳 -->
             <table class="w-full text-centeritems-center table-fixed">
                 <thead>
                     <tr>
@@ -42,6 +43,7 @@
                         <th class="w-[50px]">설정</th>
                     </tr>
                 </thead>
+                <!-- 데이터 가져오는 곳 -->
                 <ng-container *ngFor="let Index_l of index_list | filter:searchText">
                     <tbody class="text-center hover:bg-gray-100 active:bg-gray-200">
                         <tr>
@@ -50,6 +52,7 @@
                             <td class="p-2">{{ Index_l.gender }}</td>
                             <td class="p-2">{{ Index_l.age }}</td>
                             <td class="text-left p-2">{{ Index_l.residence }}</td>
+                            <!-- 모달 창 띄우기 ( 반복문이라 모달창 여러 창 떠서 index 값 설정해줘야하는데 찾아보는 중) -->
                             <td class="p-2">
                                 <img src="assets/icons/edit.svg" class="cursor-pointer" (click)="setOpen(true)">
                                 <ion-modal [isOpen]="isModalOpen" class="mymodal w-full h-full">
@@ -111,8 +114,7 @@
                                                 <input type="email"
                                                     class="w-[958px] h-[38px] pt-[3px] mx-3 rounded-lg pl-[7px] border border-gray-200 shadow-sm"
                                                     value="dkanskcj@likelion.org">
-                                                <div
-                                                    class="pl-[7px]  px-[10px] flex justify-center items-center">
+                                                <div class="pl-[7px]  px-[10px] flex justify-center items-center">
                                                     <div class="w-[39px] h-[18px]">
                                                         거주지
                                                     </div>
@@ -128,7 +130,8 @@
                                                 영원한 2인자</div>
                                         </div>
                                         <div class="mt-[19px] w-full px-5">경력 및 수상 내역</div>
-                                        <table class="w-[1100px] text-center table-fixed text-[14px] ml-[10px] mr-[25px]">
+                                        <table
+                                            class="w-[1100px] text-center table-fixed text-[14px] ml-[10px] mr-[25px]">
                                             <thead>
                                                 <tr>
                                                     <th class="px-4 text-left h-full flex justify-start items-center">날짜
@@ -142,15 +145,20 @@
                                             <ng-container *ngFor="let prize_l of prize_list | filter:searchText">
                                                 <tbody class="text-center hover:bg-gray-100 active:bg-gray-200">
                                                     <tr>
-                                                        <td class="p-4 text-left w-[366.67px] h-[50px]">{{prize_l.name}}</td>
-                                                        <td class="p-4 text-left w-[366.67px] h-[50px]">{{prize_l.group}}</td>
-                                                        <td class="p-4 text-left w-[366.67px] h-[50px]">{{prize_l.prize}}</td>
-                                                        <input type="checkbox" [checked]="prize_l.check">
+                                                        <td class="p-4 text-left w-[366.67px] h-[50px]">{{prize_l.name}}
+                                                        </td>
+                                                        <td class="p-4 text-left w-[366.67px] h-[50px]">
+                                                            {{prize_l.group}}</td>
+                                                        <td class="p-4 text-left w-[366.67px] h-[50px]">
+                                                            {{prize_l.prize}}</td>
+                                                        <input type="checkbox" class="my-4 items-cecnter "
+                                                            [checked]="prize_l.check">
                                                     </tr>
                                                 </tbody>
                                             </ng-container>
                                         </table>
-                                        <div class="grid grid-flow-col justify-center items-center h-9 pt-[26px] pb-[10px] pr-5 text-center text-gray-700">
+                                        <div
+                                            class="grid grid-flow-col justify-center items-center h-9 pt-[26px] pb-[10px] pr-5 text-center text-gray-700">
                                             <img src="assets/icons/first_page.svg"
                                                 class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
                                             <img src="assets/icons/left_page.svg"
@@ -167,6 +175,8 @@
                                             <div
                                                 class="w-9 h-9 rounded-lg flex justify-center items-center hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
                                                 4</div>
+                                            <img src="assets/icons/more_dot.svg"
+                                                class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
                                             <img src="assets/icons/right_page.svg"
                                                 class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
                                             <img src="assets/icons/last_page.svg"
@@ -219,6 +229,8 @@
                         <div
                             class="w-9 h-9 rounded-lg flex justify-center items-center hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
                             4</div>
+                        <img src="assets/icons/more_dot.svg"
+                            class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
                         <img src="assets/icons/right_page.svg"
                             class="w-9 h-9 rounded-lg hover:bg-gray-100 active:bg-primary active:text-white cursor-pointer">
                         <img src="assets/icons/last_page.svg"

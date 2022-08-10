@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UserModalComponent } from './user-modal.component';
+import { TotalComponent } from './total.component';
 
 const routes: Routes = [{
   path: '',
-  component: UserModalComponent
-}
-];
+  component: TotalComponent
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class UserModalRoutingModule { }
+export class TotalRoutingModule { }

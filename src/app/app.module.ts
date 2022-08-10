@@ -7,14 +7,12 @@ import { NgChartsModule } from 'ng2-charts';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserModalComponent } from './user-modal/user-modal.component';
 import { TestModalComponent } from './pages/test-modal/test-modal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserModalComponent,
     TestModalComponent,
   ],
   imports: [

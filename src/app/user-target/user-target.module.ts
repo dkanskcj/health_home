@@ -19,7 +19,6 @@ import { UserTargetComponent } from './user-target.component';
     FormsModule,
     Ng2SearchPipeModule,
     IonicModule,
-    // NgChartsModule,
   ]
 })
 export class UserTargetModule {
